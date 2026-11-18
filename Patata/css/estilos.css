@@ -1,0 +1,374 @@
+
+
+*, 
+
+*::before, 
+
+*::after { 
+
+  box-sizing: border-box; 
+
+} 
+:root {
+    --azulClaro: #087A87;
+    --verdeOscuro: #084912;
+    --grisOscuro: #463F3A;
+    --grisClaro: #847071;
+    --azulOscuro: #1E07B0;
+    --border: #D9D2D1;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--grisOscuro);
+    background: var(--white);
+    font-family: "Roboto", sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.encabezado-patata {
+    position: sticky;
+    z-index: 20;
+    top: 0;
+    width: 100%;
+    background: var(--grisOscuro);
+    border-bottom: 3px solid var(--verdeOscuro);
+}
+
+.navegacion-patata {
+    width: min(100% - 2rem, 1140px);
+    min-height: 68px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.marca-patata,
+.enlace-navegacion {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.marca-patata {
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.enlaces-navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.enlace-navegacion {
+    display: inline-block;
+    min-height: 2.75rem;
+    padding: 0.55rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+
+}
+
+.enlace-navegacion:hover,
+.enlace-navegacion:focus-visible {
+    color: var(--white);
+    background: rgba(255, 248, 233, 0.12);
+}
+
+.enlace-registro {
+    color: var(--white);
+    background: var(--azulClaro);
+    font-weight: 700;
+}
+
+.enlace-registro:hover,
+.enlace-registro:focus-visible {
+    color: var(--white);
+    background: var(--verdeOscuro);
+}
+
+.portada {
+    padding: 2rem 0 1.6rem;
+    background: var(--azulClaro);
+    border-bottom: 3px solid var(--verdeOscuro);
+}
+
+.contenedor {
+    width: min(100% - 2rem, 1140px);
+    margin: 0 auto;
+}
+
+.portada h1 {
+    margin: 0 0 0.3rem;
+    color: var(--white);
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.portada .introduccion {
+    margin: 0;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+button {
+    min-height: 2.75rem;
+    padding: 0.55rem 0.8rem;
+    color: var(--white);
+    background: var(--verdeOscuro);
+    border: 2px solid var(--white);
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+
+#boton-buscar {
+    margin-top: 1rem;
+}
+
+#boton-buscar:hover {
+    color: var(--white);
+    background: #06380D;
+}
+
+main.contenedor {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.texto-seccion {
+    margin: 0 0 0.25rem;
+    color: var(--verdeOscuro);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.titulo-seccion {
+    margin: 0 0 1.25rem;
+    color: var(--grisOscuro);
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.control-orden-tiendas {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 0 0 0.75rem;
+}
+
+.control-orden-tiendas label {
+    margin: 0;
+    font-weight: 700;
+}
+
+select {
+    min-height: 2.75rem;
+    padding: 0.45rem 2rem 0.45rem 0.65rem;
+    color: var(--grisOscuro);
+    background: var(--white);
+    border: 2px solid var(--border);
+    border-radius: 0.35rem;
+}
+
+.lista-tiendas {
+    margin: 0;
+    padding: 2em;
+    background: var(--verdeOscuro);
+    border-radius: 1em;
+}
+
+
+
+.etiqueta-tipo-tienda,
+.tarjeta-tienda .cantidad-valoraciones,
+.tarjeta-tienda .estrellas {
+    color: var(--white);
+}
+
+.etiqueta-tipo-tienda {
+    background: var(--grisOscuro);
+    font-weight: 700;
+}
+
+.tarjeta-tienda .boton,
+.fila-enlace-online .boton {
+    min-height: 2.75rem;
+    padding: 0.55rem 0.8rem;
+    color: var(--white);
+    background: var(--verdeOscuro);
+    border: 2px solid var(--white);
+}
+
+.tarjeta-tienda .boton:disabled {
+    color: #302A27;
+    background: var(--white);
+    opacity: 1;
+}
+
+.enlace-mapa,
+.enlace-mapa:hover {
+    color: var(--azulOscuro);
+}
+
+.separador-seccion {
+    margin: 2.5rem 0;
+    border: 0;
+    border-top: 2px solid var(--border);
+}
+
+.panel-seguimiento {
+    margin-bottom: 1rem;
+    padding: 1.6rem;
+    color: var(--white);
+    background: var(--grisOscuro);
+    border-top: 4px solid var(--azulOscuro);
+    border-radius: 12px;
+}
+
+.panel-seguimiento .texto-seccion,
+.panel-seguimiento .titulo-seccion {
+    color: var(--white);
+}
+
+.panel-seguimiento .titulo-seccion {
+    margin-bottom: 0.5rem;
+}
+
+.panel-seguimiento .nota-secundaria {
+    margin-bottom: 1.4rem;
+    color: var(--white);
+    font-size: 0.85rem;
+}
+
+.icono-enlace {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background: rgba(30, 7, 176, 0.2);
+    border-radius: 8px;
+}
+
+
+
+.nombre-enlace {
+    margin-bottom: 0.1rem;
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.descripcion-enlace {
+    overflow: hidden;
+    color: var(--white);
+    font-size: 0.77rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.enlace-tienda,
+.enlace-tienda:hover {
+    flex-shrink: 0;
+    color: var(--white);
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.formulario-enlace {
+    margin-top: 1.2rem;
+    padding: 1rem 1rem 0.8rem;
+    color: var(--white);
+    background: rgba(255, 253, 240, 0.06);
+    border: 1.5px dashed rgba(255, 253, 240, 0.2);
+    border-radius: 8px;
+}
+
+.titulo-formulario {
+    margin: 0 0 0.8rem;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.rejilla-formulario {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--white);
+    font-size: 0.78rem;
+}
+
+.formulario-enlace input {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.45rem 0.75rem;
+    color: var(--white);
+    background: #302A27;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.ayuda-formulario {
+    margin: 0.65rem 0 0;
+    color: rgba(255, 253, 240, 0.7);
+    font-size: 0.78rem;
+}
+
+#boton-anadir-enlace {
+    margin-top: 0.75rem;
+}
+
+#boton-anadir-enlace:hover {
+    background: #06380D;
+}
+
+.estado-formulario {
+    min-height: 1.3em;
+    margin: 0.65rem 0 0;
+    color: var(--white);
+    font-size: 0.85rem;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    color: var(--grisClaro);
+    border-top: 1.5px solid var(--border);
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+

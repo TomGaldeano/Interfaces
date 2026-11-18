@@ -1,0 +1,50 @@
+
+.pagina {
+  display: grid;
+  grid-template-areas:
+    "cabecera cabecera"
+    "lateral contenido"
+    "pie pie";
+  grid-template-columns: 250px 1fr;
+}
+
+.cabecera {
+  grid-area: cabecera;
+}
+
+.lateral {
+  grid-area: lateral;
+}
+
+.contenido {
+  grid-area: contenido;
+}
+
+.pie {
+  grid-area: pie;
+}
+
+.tarjetas {
+
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;        
+  padding: 24px;
+}
+.tarjeta{
+      width: 240px;
+  height: 140px;
+}
+.c1  { background: #ff6b6b; }
+.c2  { background: #ff9f43; }
+.c3  { background: #feca57; }
+.c4  { background: #1dd1a1; }
+.c5  { background: #10ac84; }
+.c6  { background: #48dbfb; }
+.c7  { background: #54a0ff; }
+.c8  { background: #5f27cd; }
+.c9  { background: #c56cf0; }
+.c10 { background: #ff9ff3; }
+.c11 { background: #576574; }
+.c12 { background: #c8d6e5; }

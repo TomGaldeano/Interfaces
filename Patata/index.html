@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Patata HQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="css/estilos.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="encabezado-patata">
+    <nav class="navegacion-patata">
+      <a class="marca-patata" href="#inicio">Patata HQ</a>
+      <div class="enlaces-navegacion">
+        <a class="enlace-navegacion" href="https://www.google.com/maps/search/supermercados+cerca+de+m%C3%AD" target="_blank" rel="noopener">Mapa</a>
+        <a class="enlace-navegacion" href="">Iniciar sesión</a>
+        <a class="enlace-navegacion enlace-registro" id="registro" href="">Registrarse</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="portada" id="inicio" aria-labelledby="titulo-pagina">
+    <div class="contenedor">
+      <h1 id="titulo-pagina">Patata HQ</h1>
+      <p class="introduccion">Supermercados cercanos y tus enlaces favoritos para comprar patatas — todo en un mismo sitio.</p>
+      <button id="boton-buscar">Buscar tiendas</button>
+    </div>
+  </section>
+
+  <main class="contenedor espaciado-vertical" id="contenido-principal">
+    <section aria-labelledby="titulo-cercanas">
+      <p class="texto-seccion">Compra en persona</p>
+      <h2 class="titulo-seccion" id="titulo-cercanas">Supermercados y tiendas de comestibles cercanos</h2>
+      <div class="control-orden-tiendas">
+        <label for="orden-cercanas">Ordenar tiendas por</label>
+        <select id="orden-cercanas">
+          <option value="distance">Distancia</option>
+          <option value="name">Nombre</option>
+          <option value="type">Tipo de tienda</option>
+        </select>
+      </div>
+      <ul id="tiendas-cercanas" class="lista-tiendas" aria-live="polite" aria-relevant="additions text" aria-busy="false"></ul>
+    </section>
+
+    <section id="seccion-guardadas" class="seccion-guardadas" aria-labelledby="titulo-guardadas">
+      <hr class="separador-seccion" />
+      <p class="texto-seccion">Tus tiendas guardadas</p>
+      <h2 class="titulo-seccion" id="titulo-guardadas">Favoritos</h2>
+      <div class="control-orden-tiendas">
+        <label for="orden-guardadas">Ordenar tiendas por</label>
+        <select id="orden-guardadas">
+          <option value="name">Nombre</option>
+          <option value="distance">Distancia</option>
+          <option value="type">Tipo de tienda</option>
+        </select>
+      </div>
+      <ul id="tiendas-guardadas" class="lista-tiendas"></ul>
+    </section>
+
+    <hr class="separador-seccion" />
+
+    <section id="seccion-online" class="panel-seguimiento" aria-labelledby="titulo-online">
+      <p class="texto-seccion">Compra online</p>
+      <h2 class="titulo-seccion" id="titulo-online">¿Dónde comprar patatas online?</h2>
+      <p class="nota-secundaria">Tu lista de accesos directos — haz clic para ir directamente a la patata.</p>
+      <div id="lista-enlaces" role="list">
+      </div>
+
+      <form class="formulario-enlace" id="formulario-enlace-online">
+        <h3 class="titulo-formulario">Añade tu propia fuente de patatas</h3>
+        <div class="rejilla-formulario">
+          <div class="campo-formulario">
+            <label for="nuevo-nombre">Nombre de la tienda / sitio (obligatorio)</label>
+            <input type="text" id="nuevo-nombre" name="label" autocomplete="organization" placeholder="p. ej. Mercadona" maxlength="80" required />
+          </div>
+          <div class="campo-formulario">
+            <label for="nueva-descripcion">Descripción breve (opcional)</label>
+            <input type="text" id="nueva-descripcion" name="description" placeholder="p. ej. mercadona.es — verdulería" maxlength="160" />
+          </div>
+          <div class="campo-formulario">
+            <label for="nueva-url">URL (obligatoria)</label>
+            <input type="url" id="nueva-url" name="url" autocomplete="url" placeholder="https://ejemplo.com" aria-describedby="ayuda-url" required />
+          </div>
+        </div>
+        <p class="ayuda-formulario" id="ayuda-url">Los campos obligatorios están indicados. La URL debe comenzar por http:// o https://.</p>
+        <button id="boton-anadir-enlace" type="submit">Añadir enlace</button>
+        <p class="estado-formulario" id="estado-enlace-online" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+     <p><a href="">Atribucion</a></p>
+     <p>&copy; 2024 Tom Galdeano. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

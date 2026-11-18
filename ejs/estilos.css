@@ -1,0 +1,32 @@
+
+/*
+
+    Poner en negrita todos los <h3> (selector de tipo). 
+
+    Poner fondo gris a los elementos con class="agotado". 
+
+    Cambiar el color del único elemento con id="oferta-destacada". 
+
+    Poner cursiva a los <p> que estén dentro de un <article> (descendiente). 
+
+    Cambiar el color de los enlaces al pasar el ratón por encima (:hover). 
+
+    Poner un borde a las imágenes cuyo atributo alt esté vacío — pista: [alt=""]. */
+
+h3{
+    font-weight: bold;
+}
+.agotaqdo{
+    background-color: grey;
+}
+#oferta-destacada{
+    color:green;
+}
+article p{
+    font-style: italic;
+}
+a:hover{
+    color:aquamarine;
+}img[alt=""]{
+    border-radius: 20px;
+}

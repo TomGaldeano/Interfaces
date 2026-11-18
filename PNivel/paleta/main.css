@@ -1,0 +1,15 @@
+:root{
+    /* CSS HEX */
+--taupe: #463f3aff;
+--teal: #087a87ff;
+--grey-olive: #847d71ff;
+--true-azure: #1e07b0ff;
+--black-forest: #084912ff;
+
+/* CSS HSL */
+--taupe: hsla(25, 9%, 25%, 1);
+--teal: hsla(186, 89%, 28%, 1);
+--grey-olive: hsla(38, 8%, 48%, 1);
+--true-azure: hsla(248, 92%, 36%, 1);
+--black-forest: hsla(129, 80%, 16%, 1);
+}
