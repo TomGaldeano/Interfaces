@@ -230,7 +230,11 @@ select {
 .enlace-mapa:hover {
     color: var(--azulOscuro);
 }
-
+.icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
 .separador-seccion {
     margin: 2.5rem 0;
     border: 0;

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U3C3</title>
+</head>
+<body>
+    <h2>
+        Imagen pesada: 42kb
+    </h2>
+    <img
+        src="../Proyecto/recursos/img/patataPesada.png"
+        srcset="../Proyecto/recursos/img/patataPesada.jpg 480w, ../Proyecto/recursos/img/patataPesada.png 1200w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        alt="imagen de una patata"
+        loading="lazy"
+    >
+
+    <h2>
+        Imagen ligera: 7.16kb
+    </h2>
+    <img
+        src="../Proyecto/recursos/img/patataligera.jpg"
+        srcset="../Proyecto/recursos/img/patataligera.jpg 1x, ../Proyecto/recursos/img/patataPesada.png 2x"
+        alt="imagen de una patata"
+        loading="lazy"
+    >
+
+    <p>Se ahorro un 83%</p>
+</body>
+</html>
