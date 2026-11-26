@@ -34,14 +34,23 @@
   </section>
 
   <main class="contenedor espaciado-vertical" id="contenido-principal">
-    <section aria-labelledby="video-Intro">
-      <video controls preload="metadata" style="max-width: 600px;">
-        <source src="recursos/video/patata.mp4">
-      </video>
-      <audio controls preload="metadata">
-        <source src="recursos/audio/Patata.m4a"  type="audio/m4a">
-      </audio>
-      <audio src="">Escucha como se dice patata</audio>
+    <section class="multimedia" aria-labelledby="titulo-multimedia">
+      <h2 class="titulo-seccion" id="titulo-multimedia">Patata!!!</h2>
+      <div class="multimedia-rejilla">
+        <div class="multimedia-tarjeta multimedia-video">
+          <video controls preload="metadata" playsinline aria-label="Vídeo de una patata">
+            <source src="recursos/video/patata.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de vídeo.
+          </video>
+        </div>
+        <div class="multimedia-tarjeta multimedia-audio">
+          <audio controls preload="metadata">
+            <source src="recursos/audio/Patata.mp3" type="audio/mpeg">
+            <source src="recursos/audio/Patata.m4a" type="audio/mp4">
+            Tu navegador no admite la reproducción de audio.
+          </audio>
+        </div>
+      </div>
     </section>
     <section aria-labelledby="titulo-cercanas">
       <p class="texto-seccion">Compra en persona</p>

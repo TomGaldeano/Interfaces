@@ -153,6 +153,37 @@ main.contenedor {
     padding-bottom: 1.5rem;
 }
 
+.multimedia {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.multimedia-rejilla {
+    display: grid;
+    gap: 1rem;
+}
+
+.multimedia-tarjeta {
+    min-width: 0;
+}
+
+.multimedia-titulo {
+    margin: 0 0 0.5rem;
+}
+
+.multimedia-video video,
+.multimedia-audio audio {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.multimedia-descripcion {
+    margin: 0 0 0.75rem;
+}
+
 .texto-seccion {
     margin: 0 0 0.25rem;
     color: var(--verdeOscuro);
@@ -375,4 +406,3 @@ footer p {
     margin: 0;
     text-align: center;
 }
-
