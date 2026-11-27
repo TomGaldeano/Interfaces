@@ -9,7 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link href="css/estilos.css" rel="stylesheet" />
   <link href="css/cargador.css" rel="stylesheet"/>
+  <link href="css/animaciones.css" rel="stylesheet"/>
   <script src="js/patata_tracker.js" defer></script>
+
+
 
 </head>
 <body>
@@ -24,7 +27,6 @@
       </div>
     </nav>
   </header>
-  </body>
 
   <section class="portada" id="inicio" aria-labelledby="titulo-pagina">
     <div class="contenedor">
@@ -35,14 +37,37 @@
   </section>
 
   <main class="contenedor espaciado-vertical" id="contenido-principal">
-    <section aria-labelledby="video-Intro">
-      <video controls preload="metadata" style="max-width: 600px;">
-        <source src="recursos/video/patata.mp4">
-      </video>
-      <audio controls preload="metadata">
-        <source src="recursos/audio/Patata.m4a"  type="audio/m4a">
-      </audio>
-      <audio src="">Escucha como se dice patata</audio>
+
+    <section class="ejdiez" aria-label="Ejemplo de botones y tarjetas">
+      <article class="ejdiez-card aparece">
+        <h2>Tarjeta animada</h2>
+        <p>Aparece con opacidad y un pequeño desplazamiento vertical.</p>
+        <button type="button">Pasa el ratón</button>
+      </article>
+      <article class="ejdiez-card">
+        <h2>Otra tarjeta</h2>
+        <p>Prueba otros valores en <code>animation</code>: 2s linear o 1s ease-in-out.</p>
+        <button type="button">Botón de ejemplo</button>
+      </article>
+    </section>
+
+    <section class="multimedia" aria-labelledby="titulo-multimedia">
+      <h2 class="titulo-seccion" id="titulo-multimedia">Patata!!!</h2>
+      <div class="multimedia-rejilla">
+        <div class="multimedia-tarjeta multimedia-video">
+          <video controls preload="metadata" playsinline aria-label="Vídeo de una patata">
+            <source src="recursos/video/patata.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de vídeo.
+          </video>
+        </div>
+        <div class="multimedia-tarjeta multimedia-audio">
+          <audio controls preload="metadata">
+            <source src="recursos/audio/Patata.mp3" type="audio/mpeg">
+            <source src="recursos/audio/Patata.m4a" type="audio/mp4">
+            Tu navegador no admite la reproducción de audio.
+          </audio>
+        </div>
+      </div>
     </section>
     <section aria-labelledby="titulo-cercanas">
       <p class="texto-seccion">Compra en persona</p>

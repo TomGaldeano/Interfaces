@@ -1,0 +1,49 @@
+:root {
+  --azulClaro: #087a87;
+  --verdeOscuro: #084912;
+  --grisOscuro: #463f3a;
+  --grisClaro: #847071;
+  --azulOscuro: #1e07b0;
+  --border: #d9d2d1;
+  --white: #fff;
+  
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--white);
+  color: #222;
+}
+
+header {
+  padding: 20px;
+  background-color: var(--azulOscuro);
+  color: var(--white);
+}
+
+nav a {
+  color: var(--white);
+  margin-right: 15px;
+}
+
+.tarjeta {
+  margin: 15px 0;
+  padding: 20px;
+  background-color: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.destacado {
+  background-color: var(--azulClaro);
+  border: 2px solid var(--azulOscuro);
+  color: var(--white);
+  box-shadow: 0 6px 14px #0004;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px 0;
+  cursor: pointer;
+}
