@@ -1,0 +1,45 @@
+:root {
+  --azulClaro: #087a87;
+  --verdeOscuro: #084912;
+  --grisOscuro: #463f3a;
+  --grisClaro: #847071;
+  --azulOscuro: #1e07b0;
+  --border: #d9d2d1;
+  --white: #fff;
+  
+}
+
+summary {
+  cursor: pointer;
+  color: blue;
+}
+
+summary:hover {
+  color: red;
+}
+
+nav {
+  display: none;
+}
+
+nav.abierto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#raton {
+  transition: color 0.2s;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .btn-hamburguesa {
+    display: none;
+  }
+}
